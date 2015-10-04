@@ -27,7 +27,7 @@ function [ mus, sigmas, pis ] = pr_gmm( X, init_means, init_covs, init_coeffs )
         end
         
         %EXIT CONDITION
-        if(prev_log_likelihood ~= -1 && abs(log_likelihood-prev_log_likelihood) < 0.001 )
+        if(prev_log_likelihood ~= -1 && abs(log_likelihood-prev_log_likelihood) < 0.001*prev_log_likelihood)
             break;
         end
         prev_log_likelihood = log_likelihood;    

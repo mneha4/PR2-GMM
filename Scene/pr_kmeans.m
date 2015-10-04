@@ -43,8 +43,7 @@ function [ cluster_means, cluster_covs, cluster_mix_coeffs, J ] = pr_kmeans( X ,
                J = J + min_dist;
             end
             
-            J
-            if (abs(prevJ - J)) < 0.01
+            if (abs(prevJ - J)) < 0.001*prevJ
                 break;
             end
             prevJ = J;

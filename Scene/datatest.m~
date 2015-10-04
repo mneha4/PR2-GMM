@@ -1,7 +1,7 @@
 [train, test] = datasets('image_scene_datasets/Features/forest/','image_scene_datasets/Features/mountain/','image_scene_datasets/Features/opencountry/');
 train = train';
 test = test';
-num_cluster_per_class = ;
+num_cluster_per_class = 8
 
 num_classes = size(train,1);
 
@@ -13,8 +13,9 @@ num_classes = size(train,1);
 classes = cell(num_classes,1);  
                                
 %%%%%%%%%%%%%%TRAINING%%%%%%%%%%%%%%%%%%%
-
+display('Training the model');
 for i = 1:num_classes %for each class 
+  display('Training for class');
   classes{i} = cell(num_classes,1);  
   flattenedFeatureSets = vertcat(train{i}{1:end});
   [init_means, init_covs, init_coeffs] = pr_kmeans(flattenedFeatureSets, num_cluster_per_class);
@@ -28,6 +29,7 @@ end
 confusionMatrix = zeros(num_classes, num_classes);
 
 %%%%%%%%%%%%%%%TESTING%%%%%%%%%%%%%%%%%%%
+display('Testing the model');
 num_test_samples = 0;
 for i = 1:num_classes %for each class 
     for j=1:length(test{i}) %for each classes's test data 
@@ -39,6 +41,9 @@ end
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%STATS%%%%%%%%%%%%%%%%
-    correct = sum(diag(confusionMatrix));
-    accuracy = correct/num_test_samples;
+display('Stats');   
+    confusionMatrix
+    correct = sum(diag(confusionMatrix))
+    incorrect = num_test_samples - correct
+    accuracy = correct/num_test_samples
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
