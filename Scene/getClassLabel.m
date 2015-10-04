@@ -1,4 +1,4 @@
-function [ predicted_label ] = getClassLabel(testSample, classes )
+function [ predicted_label ] = getClassLabel(testSample, classes, num_classes )
     max_likelihood = 0;
     predicted_label = 0;  
     for c=1:num_classes

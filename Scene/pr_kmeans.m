@@ -60,7 +60,7 @@ function [ cluster_means, cluster_covs, cluster_mix_coeffs, J ] = pr_kmeans( X ,
                     end
                 end
                 cluster_means{k} = mean(clusters{k});
-                %cluster_covs{k} = cov(clusters{k});
+                cluster_covs{k} = cov(clusters{k});
                 cluster_mix_coeffs{k} = size(clusters{k},1)/N;
             end            
             i = i + 1;

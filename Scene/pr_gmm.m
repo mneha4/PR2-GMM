@@ -13,7 +13,7 @@ function [ mus, sigmas, pis ] = pr_gmm( X, init_means, init_covs, init_coeffs )
     prev_log_likelihood = -1;
     while i < iterations
         %E-STEP : Calculate the responsiblity term
-        responsibility = cell(N,K);
+        responsibility = zeros(N,K);
         log_likelihood = 0;
         for n=1:N
             denom = 0;
