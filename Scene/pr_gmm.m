@@ -9,7 +9,7 @@ function [ mus, sigmas, pis ] = pr_gmm( X, init_means, init_covs, init_coeffs )
     sigmas = init_covs;
     pis = init_coeffs;
     i=0;
-    iterations = 25;
+    iterations = 5;
     prev_log_likelihood = -1;
     while i < iterations
         %E-STEP : Calculate the responsiblity term

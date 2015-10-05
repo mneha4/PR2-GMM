@@ -1,0 +1,160 @@
+num_cluster_per_class =
+
+     8
+
+
+J =
+
+     2.917938843488676e+04
+
+
+J =
+
+     1.651682577410352e+04
+
+
+J =
+
+     1.471244402949174e+04
+
+
+J =
+
+     1.405594409779338e+04
+
+
+J =
+
+     1.376051065350137e+04
+
+
+J =
+
+     1.103439217238305e+05
+
+
+J =
+
+     3.057227831537314e+04
+
+
+J =
+
+     2.738493658175095e+04
+
+
+J =
+
+     2.561786462501876e+04
+
+
+J =
+
+     2.476611715810667e+04
+
+
+J =
+
+     3.895190995977310e+04
+
+
+J =
+
+     2.359422210047892e+04
+
+
+J =
+
+     2.272355841149779e+04
+
+
+J =
+
+     2.245209524093961e+04
+
+
+J =
+
+     2.224350154970165e+04
+
+
+confusionMatrix =
+
+    69     4     9
+     5    59    30
+    12    12    79
+
+
+correct =
+
+   207
+
+
+incorrect =
+
+    72
+
+
+accuracy =
+
+   0.741935483870968
+
+
+num_cluster_per_class =
+
+    32
+
+Training the model
+Testing the model
+Stats
+
+confusionMatrix =
+
+    64    12     6
+     2    83     9
+     6    20    77
+
+
+correct =
+
+   224
+
+
+incorrect =
+
+    55
+
+
+accuracy =
+
+   0.802867383512545
+
+
+num_cluster_per_class =
+
+    64
+
+Training the model
+Testing the model
+Stats
+
+confusionMatrix =
+
+    59    12    11
+     1    76    17
+     5    13    85
+
+
+correct =
+
+   220
+
+
+incorrect =
+
+    59
+
+
+accuracy =
+
+    0.7885

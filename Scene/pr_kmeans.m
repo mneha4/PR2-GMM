@@ -19,7 +19,7 @@ function [ cluster_means, cluster_covs, cluster_mix_coeffs, J ] = pr_kmeans( X ,
             cluster_means{i} = X(i,:);
         end
                 
-        iterations = 25;
+        iterations = 5;
         i = 0;
 
         prevJ = inf;

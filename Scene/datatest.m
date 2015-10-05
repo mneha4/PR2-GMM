@@ -1,7 +1,7 @@
 [train, test] = datasets('image_scene_datasets/Features/forest/','image_scene_datasets/Features/mountain/','image_scene_datasets/Features/opencountry/');
 train = train';
 test = test';
-num_cluster_per_class = 8
+num_cluster_per_class = 64
 
 num_classes = size(train,1);
 
